@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2026-10-20T08:51:04.427Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="I1Hi9PoVvH2wA7RDrcGW" version="23.0.2" type="device">
+  <diagram name="Страница — 1" id="AoDxxtrRW1bt5bwaejic">
+    <mxGraphModel dx="1434" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hiiaGQI88Y2ndj706lHV-1" value="&lt;div&gt;&lt;b class=&quot;Strong-styled__StyledStrong-sc-927c6ee2-0 kFQvYW&quot;&gt;roles&lt;/b&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="120" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-2" value="&lt;div&gt;Справочник ролей пользователей (Гость, Клиент, Администратор).&lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;role_id&lt;/code&gt; (PK)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="hiiaGQI88Y2ndj706lHV-1">
+          <mxGeometry y="30" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-5" value="&lt;div&gt;halls&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="440" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-6" value="&lt;div&gt;Справочник кинозалов (название, количество рядов и мест).&lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;hall_id&lt;/code&gt; (PK)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="hiiaGQI88Y2ndj706lHV-5">
+          <mxGeometry y="30" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-9" value="&lt;div&gt;clients&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="600" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-10" value="&lt;div&gt;Данные зарегистрированных клиентов. Ссылается на &lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;roles&lt;/code&gt;.&lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;client_id&lt;/code&gt; (PK), &lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;role_id&lt;/code&gt; (FK)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="hiiaGQI88Y2ndj706lHV-9">
+          <mxGeometry y="30" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-13" value="&lt;div&gt;&lt;b class=&quot;Strong-styled__StyledStrong-sc-927c6ee2-0 kFQvYW&quot;&gt;films&lt;/b&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-14" value="&lt;div&gt;&lt;b class=&quot;Strong-styled__StyledStrong-sc-927c6ee2-0 kFQvYW&quot;&gt;&lt;/b&gt;Каталог фильмов (название, жанр, длительность, возраст).&lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;film_id&lt;/code&gt; (PK)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="hiiaGQI88Y2ndj706lHV-13">
+          <mxGeometry y="30" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-17" value="&lt;div&gt;&lt;b class=&quot;Strong-styled__StyledStrong-sc-927c6ee2-0 kFQvYW&quot;&gt;sessions&lt;/b&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="760" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-18" value="&lt;div&gt;&lt;b class=&quot;Strong-styled__StyledStrong-sc-927c6ee2-0 kFQvYW&quot;&gt;&lt;/b&gt;Расписание сеансов. Связывает конкретный фильм и конкретный зал с датой и временем. Ссылается на &lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;films&lt;/code&gt; и &lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;halls&lt;/code&gt;.&lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;session_id&lt;/code&gt; (PK), &lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;film_id&lt;/code&gt; (FK), &lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;hall_id&lt;/code&gt; (FK)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="hiiaGQI88Y2ndj706lHV-17">
+          <mxGeometry y="30" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-21" value="&lt;div&gt;&lt;b class=&quot;Strong-styled__StyledStrong-sc-927c6ee2-0 kFQvYW&quot;&gt;tickets&lt;/b&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="960" width="170" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-22" value="&lt;div&gt;&lt;table class=&quot;Table-styled__StyledTable-sc-26fdbc61-1 hdrtL&quot;&gt;&lt;tbody&gt;&lt;tr class=&quot;Table-styled__StyledTr-sc-26fdbc61-4 bnYqvK&quot;&gt;&lt;td class=&quot;Table-styled__StyledTd-sc-26fdbc61-3 ficRhy&quot;&gt;Купленные билеты. Фиксирует, кто (&lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;client_id&lt;/code&gt;), на какой сеанс (&lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;session_id&lt;/code&gt;) и какое конкретное место купил.&lt;/td&gt;&lt;td class=&quot;Table-styled__StyledTd-sc-26fdbc61-3 ficRhy&quot;&gt;&lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;ticket_id&lt;/code&gt; (PK), &lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;session_id&lt;/code&gt; (FK), &lt;code class=&quot;Codespan-styled__StyledCodespan-sc-51917fe8-0 hZBiba&quot;&gt;client_id&lt;/code&gt; (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="hiiaGQI88Y2ndj706lHV-21">
+          <mxGeometry y="30" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.494;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hiiaGQI88Y2ndj706lHV-21" target="hiiaGQI88Y2ndj706lHV-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.488;entryY=1.044;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hiiaGQI88Y2ndj706lHV-17" target="hiiaGQI88Y2ndj706lHV-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.476;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hiiaGQI88Y2ndj706lHV-9" target="hiiaGQI88Y2ndj706lHV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hiiaGQI88Y2ndj706lHV-5" target="hiiaGQI88Y2ndj706lHV-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.529;entryY=1.091;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hiiaGQI88Y2ndj706lHV-13" target="hiiaGQI88Y2ndj706lHV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hiiaGQI88Y2ndj706lHV-30" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Журавлев&amp;nbsp;&lt;/blockquote&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="170" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
